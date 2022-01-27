@@ -1,0 +1,9 @@
+@comment $OpenBSD: PLIST,v 1.2 2011/05/01 20:05:54 sthen Exp $
+@newgroup _greyscanner:729
+@newuser _greyscanner:729:729:daemon:greyscanner daemon:/nonexistent:/sbin/nologin
+@rcscript ${RCDIR}/greyscanner
+@man man/man1/greyscanner.1
+sbin/greyscanner
+share/examples/greyscanner/
+share/examples/greyscanner/greyscanner.conf
+@sample ${SYSCONFDIR}/greyscanner.conf

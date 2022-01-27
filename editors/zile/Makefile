@@ -1,0 +1,27 @@
+# $OpenBSD: Makefile,v 1.52 2020/12/09 10:24:57 gonzalo Exp $
+
+COMMENT=		lightweight Emacs clone
+DISTNAME=		zile-2.6.1
+CATEGORIES=		editors
+HOMEPAGE=		https://www.gnu.org/software/zile/
+
+MAINTAINER=		Gonzalo L. R. <gonzalo@openbsd.org>
+
+# GPLv3+
+PERMIT_PACKAGE=	Yes
+
+WANTLIB += c curses gc pthread
+
+MASTER_SITES=		${MASTER_SITE_GNU:=zile/}
+
+
+LIB_DEPENDS=		devel/boehm-gc
+
+BUILD_DEPENDS=		devel/help2man
+
+USE_GMAKE=			Yes
+CONFIGURE_STYLE=gnu
+CONFIGURE_ENV=	LDFLAGS="-L${LOCALBASE}/lib" \
+		CPPFLAGS="-I${LOCALBASE}/include"
+
+.include <bsd.port.mk>

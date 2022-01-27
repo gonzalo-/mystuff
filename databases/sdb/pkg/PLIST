@@ -1,0 +1,22 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/sdb
+include/sdb/
+include/sdb/buffer.h
+include/sdb/cdb.h
+include/sdb/cdb_make.h
+include/sdb/config.h
+include/sdb/ht_inc.h
+include/sdb/ht_pp.h
+include/sdb/ht_pu.h
+include/sdb/ht_up.h
+include/sdb/ht_uu.h
+include/sdb/ls.h
+include/sdb/sdb.h
+include/sdb/sdb_userconf.h
+include/sdb/sdb_version.h
+include/sdb/sdbht.h
+include/sdb/set.h
+include/sdb/types.h
+@so lib/libsdb.so
+lib/pkgconfig/sdb.pc
+@man man/man1/sdb.1

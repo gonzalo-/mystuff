@@ -1,0 +1,13 @@
+#!/bin/ksh
+#
+# $OpenBSD: mdnsd.rc,v 1.2 2018/01/11 19:27:07 rpe Exp $
+
+daemon="${TRUEPREFIX}/bin/mdnsd"
+daemon_flags="em0"
+
+. /etc/rc.d/rc.subr
+
+pexp="mdnsd: mdnsd"
+rc_reload=NO
+
+rc_cmd $1

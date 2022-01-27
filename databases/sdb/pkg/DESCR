@@ -1,0 +1,2 @@
+sdb is a simple string key/value database based on djb's cdb disk
+storage and supports JSON and arrays introspection.

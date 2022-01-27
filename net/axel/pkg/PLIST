@@ -1,0 +1,6 @@
+@comment $OpenBSD: PLIST,v 1.4 2020/12/03 09:32:30 gonzalo Exp $
+@bin bin/axel
+@man man/man1/axel.1
+share/examples/axel/
+share/examples/axel/axelrc.example
+@sample ${SYSCONFDIR}/axelrc

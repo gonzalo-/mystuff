@@ -1,0 +1,4 @@
+yav is a Golang "live" static blog. Content is kept in memory for fast
+delivery and checked against disk to grab updates to the site. It was
+aimed to be for personal use but open for all.
+

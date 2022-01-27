@@ -1,0 +1,18 @@
+# $OpenBSD$
+
+COMMENT =	todo
+
+MODGO_MODNAME =	github.com/sourcegraph/checkup
+MODGO_VERSION =	v1.0.0
+
+DISTNAME =	checkup-${MODGO_VERSION}
+PKGNAME =	checkup-1.0.0
+
+CATEGORIES =	www
+
+# MIT
+PERMIT_PACKAGE =	Yes
+
+MODULES =		lang/go
+
+.include <bsd.port.mk>
